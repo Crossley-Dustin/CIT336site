@@ -1,0 +1,296 @@
+
+/*for testing only*/
+/*div {
+    outline: blue;
+    outline-width: 1px;
+    outline-style: solid;    
+}*/
+
+
+*{
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+/* width cut offs, 3 sizes */ 
+/* max-width 479 */
+/* min-width 480, max-width 767 */
+/* min-width 768 */
+
+@font-face {
+    font-family:'TCChavezPro-Regular';
+    src: url('/triathlon/assets/fonts/TCChavezPro_gdi.eot');
+    src: url('/triathlon/assets/fonts/TCChavezPro_gdi.eot?#iefix') format('embedded-opentype'),
+        url('/triathlon/assets/fonts/TCChavezPro_gdi.woff') format('woff'),
+        url('/triathlon/assets/fonts/TCChavezPro_gdi.ttf') format('truetype'),
+        url('/triathlon/assets/fonts/TCChavezPro_gdi.svg#TCChavezPro-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    /*unicode-range: U+0021-00F8;*/
+}
+
+body {
+    font-family:  "Roboto Slab",Helvetica,Arial,sans-serif;
+}
+
+h1-h6, #logo {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+    background: #F5F5F5; /*#AFAFAF;*/
+    text-align: center;
+}
+
+body {
+    /*background: burlywood;*/
+    /*    background-image: url("/triathlon/assets/images/alcatraz_island_01_test3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;*/
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 260px;
+    padding: 0;
+}
+
+a {
+    display: block;
+}
+
+/*.container {
+    text-align: center;
+}*/
+
+header li a:link, header li a:visited {
+    background-color: #A8A8A8;
+    color: #CA6D26;
+}
+
+footer {
+    font-size: .8em;
+}
+
+header li a:hover{
+    background-color: #6ED463;
+}
+
+#logo {
+    font-family: 'TCChavezPro-Regular';
+    text-align: center;
+    color: #484245;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+li>a {
+    width: 5em;
+    height: auto;
+    line-height: 1.7;
+}
+
+.left p {
+    text-align: center;
+    color: #CA6D26;
+}
+
+header ul, header ul>li, header middle {
+    text-align:center;
+}
+
+footer ul>li {
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+}
+
+.col-one, .col-two, .col-three {
+    height: 100%;
+    margin: .1em;
+    vertical-align: top;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.col-one, .col-two {
+    height: 100%;
+}
+
+.col-one:after, .col-two:after, .col-three:after {
+    height:100%;
+    content:'';
+    font-size:0;
+    vertical-align: top;
+    display:inline-block;
+    box-sizing: border-box;
+}
+
+footer li a{
+    border-right: 1px solid;
+    color: #CA6D26;
+    text-align: center;
+}
+
+footer a:hover{
+    color: #6ED463;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background-color: #CA6D26;
+    width: 8em;
+    line-height: 1.5;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500; 
+    font-size: 1.2em;
+    color:white;
+}
+
+button:hover {
+    background-color: #6ED463;
+}
+
+@media screen and (max-width: 479px) {
+    .col-one, .col-two, .col-three{
+        display: block;
+    }
+    #logo {
+        font-size: 1.8em; 
+    }
+    header ul>li {
+        display: block;
+    }
+
+    body {
+        font-size: 1.1em;
+        line-height: 1;    
+    }
+    .left p {
+        margin: -.01em 0 -.01em 0;
+    }
+    ul {
+        margin: 0; 
+    }
+
+    /*    .one {
+            width: 100%;
+        }
+        .two {
+            width: 100%;
+        }
+        .three {
+            width: 100%;
+        }*/
+    /*    img {
+            height: auto;
+            width:100%;
+        }*/
+}
+
+@media screen and (min-width: 480px) AND (max-width: 800px) {
+    .col-one, .col-two {
+        display: inline-block;
+    }    
+    /*    .left {        
+            width: 100%;
+        }*/
+    #logo {
+        font-size: 2em; 
+    }
+    header ul>li {
+        display: inline-block;
+    }
+    /*    .right {
+            background-image: url("../assets/images/pelican_120x80.jpg");
+        }    */
+    .col-one {
+        width: 47%;
+        min-width: 20em;
+    }
+    .col-two {
+        width:47%;
+    }
+    .col-three {
+        width:95%;
+    }
+    body {
+        font-size: 1.1em;
+        line-height: 1.1;   
+        text-align: center;
+    }    
+    .left p {
+        margin-top: -.05em;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #logo {
+        font-size: 2.3em; 
+        text-align: center;
+    }    
+    body {
+        text-align: left;
+        font-size: 1.1em;
+        line-height: 1.5;    
+    }
+    .left p {
+        margin-top: -.4em;
+    }
+
+    header ul>li {
+        display: inline-block;
+    }    
+}
+
+@media screen and (min-width: 801px) and (max-width:1200px){
+    .col-one, .col-two, .left, .middle{
+        display: inline-block;        
+    }    
+    .col-one {
+        width: 40%;
+        min-width: 20em;
+    }
+    .col-two {
+        width: 45%;
+    }
+    .col-three {
+        width: 95%;
+    }    
+}
+
+@media screen and (min-width: 1201px) {
+    .col-one, .col-two, .col-three, .left, .middle{
+        display: inline-block;        
+    }    
+    .col-one {
+        width: 30%;
+        min-width: 20em;
+    }
+    .col-two {
+        width: 40%;
+    }
+    .col-three {
+        width: 20%;
+    }    
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table, th, td {
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: .1em;
+}
