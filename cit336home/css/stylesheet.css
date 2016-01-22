@@ -104,14 +104,22 @@ header nav li {
     margin: .5em .5em 0 0; 
     text-transform: uppercase;
 }
-li > a:link, li > a:visited{
-    /*background-color: #0082BA;*/
+/*li > a:link, li > a:visited{
+    background-color: #0082BA;
     color: #FAFAFA;
+}*/
+li > a:link, li > a:visited{
+    color: #0082BA;
+}
+
+li > a:hover{
+    color:#FF8700;
 }
 
 header li > a:link, header li > a:visited{
     background-color: #0082BA;
     line-height: 1.7em;
+    color: #FAFAFA;
 }
 
 header li > a:link {
@@ -209,6 +217,11 @@ footer li {
     margin: 0;
     padding: 0 .4em;
     border-right: 1px solid;
+}
+
+footer a:link, footer a:visited{
+    background-color: #0082BA;
+    color: #FAFAFA;
 }
 
 footer a:hover, footer a:active {

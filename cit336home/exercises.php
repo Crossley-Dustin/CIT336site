@@ -16,7 +16,7 @@
                 <li>Exercise 1-1 - Completed</li>
                 <li>Exercise 1-2 - Completed</li>
                 <li>Exercise 1-3 - Completed</li>
-                <li>Exercise 2-1</li>
+                <li><a href="/cit336home/exercises/ch02_ex1/index.html" title="Exercise 2-1">Exercise 2-1</a></li>
                 <li>Exercise 3-1</li>
                 <li>Exercise 4-1</li>
                 <li>Exercise 5-1</li>
